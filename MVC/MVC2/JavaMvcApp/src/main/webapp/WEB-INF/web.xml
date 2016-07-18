@@ -1,0 +1,21 @@
+
+
+<web-app version="3.1"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+		                     http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+    <display-name>Awesome MVC Framework</display-name>
+
+    <!--Configurare servleti-->
+    <servlet>
+        <servlet-name>MyDispatchServlet</servlet-name>
+        <servlet-class>ro.teamnet.zth.MyDispatcherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyDispatchServlet</servlet-name>
+        <url-pattern>/mvc/*</url-pattern>
+    </servlet-mapping>
+
+</web-app>
